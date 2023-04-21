@@ -1,20 +1,20 @@
-
+import logo from './logo.svg';
 import './App.css';
-import Button from './components/button/Button';
-import ReactBenefits from './components/react-benefits/ReactBenefits';
-import ReactLogo from './components/react-logo/ReactLogo';
+import { Invitation } from './components/invitation';
 
 function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <ReactLogo />
-                <ReactBenefits />
-                <Button />
+  return (
+    <div className="App">
 
-            </header>
-        </div>
-    );
+      <Invitation party=" Birthday party Invitation 
+" email="jaGdish@gmail.com
+" name="jaGdish" persons="Ritu , Saurabh , Kartik ."
+        venue="Green field Avenue"
+        from=" JaGdish
+"/>
+
+    </div>
+  );
 }
 
 export default App;
