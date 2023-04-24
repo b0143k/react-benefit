@@ -5,4 +5,8 @@
     margin: 20px;
       text-align: left;
       background-color: purple;
+
+  }
+  .user-card img{
+    width: 50px;
   }
