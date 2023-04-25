@@ -1,15 +1,14 @@
-// import logo from '../logo.svg';
-import aman from './Aryan Shirani.jpg'
 import './UserCard.css'
 
-function UserCard() {
+function UserCard(props) {
+    console.log(props);
+    const { user } = props;
     return (
         <div className='user-card'>
-            <img src={aman}  alt="logo" />
-            <h3>UI/UX Designer</h3>
-            <h1>Aryan Shirani</h1>
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
+            <img src={user.imageSrc} alt="logo" />
+            <h3>{user.designation}</h3>
+            <h1>{user.name}</h1>
+            <p>{user.description}</p>
             <button>
                 See More
             </button>
