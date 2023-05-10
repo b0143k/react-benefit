@@ -1,0 +1,46 @@
+.btn {
+    background-color: rgb(255 255 255);
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: system-ui;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #656464;
+    border: none;
+}
+.main-button {
+    background-color: #fff;
+    color: rgb(146 42 0);
+    width: 10rem;
+    height: 2rem;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    
+        .btn {
+            background-color: rgb(255 255 255);
+            width: 90px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: system-ui;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #c23700;
+        }
+    
+}

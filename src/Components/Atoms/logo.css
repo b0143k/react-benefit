@@ -1,0 +1,12 @@
+.logo{
+    margin-left: 80px;
+    color: white;
+    font-size: 25px;
+    
+}
+
+.icon {
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+}
