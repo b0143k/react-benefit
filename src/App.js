@@ -1,21 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './Pages/home';
+import Login from './Pages/login';
+import Register from './Pages/register';
+import AboutUs from './Pages/aboutUs';
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>Benefits of using react ...</p>
-                <ol>
-                    <li>Component based architecture</li>
-                    <li>Virtual Dom for efficent updates</li>
-                    <li>Rich ecosystem and community</li>
-                    <li>cross-platform development </li>
-                    <li>Strong community support:</li>
-                </ol>
-                <button> Get started ...</button>
-            </header>
+            <BrowserRouter>
+            <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/aboutUs' element={<AboutUs/>} />
+            <Route path='/login' element={<Login/>} />
+            <Route path='/register' element={<Register/>} />
+
+            </Routes>
+
+
+
+            </BrowserRouter>
         </div>
     );
 }
